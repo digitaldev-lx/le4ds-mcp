@@ -148,7 +148,7 @@ Up to 10 active keys per account. Revoking a key takes effect immediately.
 | Tool | Permission | What it does |
 |---|---|---|
 | `list_accounts` | `posts:read` | Your connected accounts, with platform, accepted formats and limits |
-| `list_clients` | `posts:read` | Your Vault clients (agencies, see below) |
+| `list_clients` | `posts:read` | Your Vault clients (Agency plan, see below) |
 | `list_posts` | `posts:read` | Posts filtered by status and date range |
 | `get_post` | `posts:read` | One post, with the status and any error per network |
 | `request_video_upload` | `posts:write` | Starts a multipart video upload and returns presigned part URLs |
@@ -250,12 +250,11 @@ Presigned URLs expire after 15 minutes.
 
 ## Agencies: Vault clients
 
-On the **Agency** plan you manage clients' accounts in the le4ds Vault. Using the MCP on Vault clients requires the
-**Vault via MCP add-on (€30/month)**, which you can activate in **Settings → API keys**.
+On the **Agency** plan (€30/month, VAT included) you manage clients' accounts in the le4ds Vault, and the MCP works on
+them. There is no add-on to buy: Vault clients via MCP are part of the Agency plan.
 
-With the add-on, pass `client_id` (from `list_clients`) to `list_accounts`, `list_posts` and `create_post`. A post
-uses either your own accounts or one client's accounts, never both. Without the add-on, the MCP works on your own
-accounts only.
+Pass `client_id` (from `list_clients`) to `list_accounts`, `list_posts` and `create_post`. A post uses either your own
+accounts or one client's accounts, never both. On the Free and Pro plans the MCP works on your own accounts only.
 
 ## Limits
 
