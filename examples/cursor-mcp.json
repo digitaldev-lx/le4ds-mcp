@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "le4ds": {
+      "url": "https://le4ds.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_API_KEY"
+      }
+    }
+  }
+}

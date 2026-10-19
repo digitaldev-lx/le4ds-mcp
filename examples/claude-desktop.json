@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "le4ds": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://le4ds.com/mcp",
+        "--header",
+        "Authorization:${LE4DS_AUTH}"
+      ],
+      "env": {
+        "LE4DS_AUTH": "Bearer YOUR_API_KEY"
+      }
+    }
+  }
+}
